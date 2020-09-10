@@ -9,11 +9,11 @@ class signupForm(UserCreationForm):
         model = User
         fields = ['username','email']
 
-class galleryForm(ModelForm):
+# class galleryForm(ModelForm):
 
-    class Meta:
-        model = gallery
-        fields = ['photo']
+#     class Meta:
+#         model = gallery
+#         fields = ['photo']
 
 class feedbackForm(ModelForm):
 
