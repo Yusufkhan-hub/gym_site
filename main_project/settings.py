@@ -25,7 +25,7 @@ SECRET_KEY = 'dm%m72ifl^$=()7d$!x176g_oh_9%&3-&96@lold3snrr+%tcd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','gym-s.herokuapp.com']
 
 
 # Application definition
