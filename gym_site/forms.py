@@ -1,7 +1,7 @@
 from django.forms import ModelForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import User
-from .models import gallery, feedback
+from .models import feedback
 
 class signupForm(UserCreationForm):
     

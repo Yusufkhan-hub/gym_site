@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .forms import signupForm, galleryForm, feedbackForm
-from .models import signUp, gallery
+from .forms import signupForm, feedbackForm
+from .models import signUp
 from django.contrib.auth import login,logout,authenticate
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
@@ -13,15 +13,7 @@ def content(request):
     return render(request,'content.html')
 
 def gallery(request):
-    files = galleryForm()
-    if request.method == 'POST':
-        files = galleryForm(request.POST,request.FILES)
-        if files.is_valid():
-            files.save()
-            return render(request,'gallery.html')
-        else:
-            return HttpResponse("""Your form is wrong""")   
-    return render(request,'gallery.html',{'file':files})
+    return render(request,'gallery.html')
 
 def instructor(request):
     return render(request,'instructor.html')
@@ -64,3 +56,13 @@ def why_fit_hit(request):
             return HttpResponse(""" Your feedback is wrong please correct the info""")
     return render(request,'whyfitHit.html',{'feedback':feedback})
 
+# def gallery(request):
+    # files = galleryForm()
+    # if request.method == 'POST':
+    #     files = galleryForm(request.POST,request.FILES)
+    #     if files.is_valid():
+    #         files.save()
+    #         return render(request,'gallery.html')
+    #     else:
+    #         return HttpResponse("""Your form is wrong""")   
+#     return render(request,'gallery.html')
