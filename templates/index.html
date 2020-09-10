@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="https://source.unsplash.com/800x400/?gym">
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Sunil kothiyal</h2>
+            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <p class="text-base text-gray-600">"Your body can stand almost anything. It's Your mind that you have to convince".</p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4">First you feel like you dying then you feel like reborn, Good it's working. We help you at every steps and level to get you in shape, but the fact is you the only one who can make it. If it's doesn't challenge you, it won't change you. Once you see result it becomes an addiction.</p>
+          <a href="{% url 'why_fit_hit' %}" class="text-indigo-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF TOP FITNESS</h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Your First Attempt</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We Provide You best Traning to shape you and reform yourself. </p>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Instructors</h2>
+        <p class="leading-relaxed text-base mb-4">We are friendly and very supportive instructor and wanna know about ability, so just come and check.</p>
+        <a href="{% url 'about' %}" class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Fitness/Training</h2>
+        <p class="leading-relaxed text-base mb-4">Cardio machines, weights, body-weight training equipment, and yoga classes to help bring your training to the next level.</p>
+        <a href="{% url 'about' %}" class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Facilities</h2>
+        <p class="leading-relaxed text-base mb-4">Saunas, showers, towel service, retail area, healthy refreshments, climbing library and areas to relax and hang out.</p>
+        <a href="{% url 'about' %}" class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Community</h2>
+        <p class="leading-relaxed text-base mb-4">A welcoming and inclusive community committed to sharing our passion for climbing and promoting responsible outdoor ethics.</p>
+        <a href="{% url 'about' %}" class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <a href="{% url 'about' %}">
+    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Explore More...</button>
+    </a>
+  </div>
+</section>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Everythins is depend upon how you got trained. This keep in mind we prepare the session and training so you can explore your efficiency. Meet our well trained and experienced staffs.</p>
+    </div>
+    <div class="flex flex-wrap -m-2">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/80x80/?male">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Yusuf Khan</h2>
+            <p class="text-gray-500">Owner</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/84x84/?instructor">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Rahul</h2>
+            <p class="text-gray-500">Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/88x88/?face">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Imran</h2>
+            <p class="text-gray-500">Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/90x90/?male">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Utkarsh</h2>
+            <p class="text-gray-500">Cardio Specialist</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/94x94/?female">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Martin Eden</h2>
+            <p class="text-gray-500">Instructor</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/98x98/?female">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Boris Kitua</h2>
+            <p class="text-gray-500">Trainer</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/100x90/?face">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Atticus Finch</h2>
+            <p class="text-gray-500">Cardio</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/104x94/?face">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Alper Kamu</h2>
+            <p class="text-gray-500">Mix Martial Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://source.unsplash.com/108x98/?face">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Rodrigo Monchi</h2>
+            <p class="text-gray-500">Cardio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+      </svg>
+      <p class="leading-relaxed text-lg">EXERCISES NOT ONLY CHANGES YOUR BODY. IT CHANGES YOUR MIND,YOUR ATTITUDE, AND YOUR MOOD. THE BEST PROJECT YOU WILL EVER WORK ON IS "YOU". REMEMBER BECOMING STRONG DOESN'T START IN GYM. IT'S START IN YOUR HEAD.</p>
+      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Yusuf</h2>
+      <p class="text-gray-500">Owner</p>
+    </div>
+  </div>
+</section>
+
+
+{% endblock content %}
